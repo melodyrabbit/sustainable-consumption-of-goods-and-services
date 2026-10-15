@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Consumption Learning Package | Sec 2 Green Compass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-emerald-50/40 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="bg-white border-b border-emerald-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow-md">🌱</div>
+                <div>
+                    <h1 class="text-xl font-bold text-slate-900">Green Compass</h1>
+                    <p class="text-xs text-emerald-600 font-medium">Sec 2 Sustainable Consumption Programme</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-2">
+                <button onclick="switchTab(1)" id="nav-1" class="px-4 py-2 rounded-full text-sm font-semibold transition-all bg-emerald-600 text-white shadow-sm">1. Lesson</button>
+                <button onclick="switchTab(2)" id="nav-2" class="px-4 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 hover:bg-emerald-50">2. Games</button>
+                <button onclick="switchTab(3)" id="nav-3" class="px-4 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 hover:bg-emerald-50">3. Apple Waffles</button>
+                <button onclick="switchTab(4)" id="nav-4" class="px-4 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 hover:bg-emerald-50">4. Enzymes</button>
+                <button onclick="switchTab(5)" id="nav-5" class="px-4 py-2 rounded-full text-sm font-semibold transition-all bg-emerald-600 text-white shadow-sm">5. Submit Poster</button>
+            </nav>
+        </div>
+        <!-- Mobile Navigation bar -->
+        <div class="md:hidden flex overflow-x-auto px-4 py-2 border-t border-slate-100 bg-white space-x-2">
+            <button onclick="switchTab(1)" id="mob-nav-1" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white whitespace-nowrap">1. Lesson</button>
+            <button onclick="switchTab(2)" id="mob-nav-2" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 whitespace-nowrap">2. Games</button>
+            <button onclick="switchTab(3)" id="mob-nav-3" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 whitespace-nowrap">3. Waffles</button>
+            <button onclick="switchTab(4)" id="mob-nav-4" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 whitespace-nowrap">4. Enzymes</button>
+            <button onclick="switchTab(5)" id="mob-nav-5" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white whitespace-nowrap">5. Poster</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+        <!-- TAB 1: LESSON -->
+        <div id="tab-1" class="tab-content active space-y-8">
+            <div class="bg-gradient-to-r from-emerald-800 to-teal-900 rounded-3xl p-8 text-white shadow-xl">
+                <span class="bg-emerald-500/30 text-emerald-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Module 1</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">Sustainable Consumption of Goods & Services</h2>
+                <p class="text-emerald-100 max-w-3xl text-sm sm:text-base leading-relaxed">
+                    Explore what sustainable consumption means, why it is critical for Singapore's food security and our global climate, and how we can practice it through the 3Rs and Eco-Labels.
+                </p>
+            </div>
+
+            <!-- Video Section -->
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-emerald-100">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                    <span class="bg-emerald-100 text-emerald-800 p-2 rounded-lg mr-3 text-sm">▶️</span> Lesson Video & Slides
+                </h3>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/sUf7Dzpgbfc" title="Sustainable Consumption Lesson Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Core Slides Summary Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold mb-4">🌍</div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">What & Why</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Sustainable consumption means reducing waste and using fewer resources. Unchecked consumption accelerates climate change, impacting food supplies and weather patterns worldwide.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm">
+                    <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl font-bold mb-4">♻️</div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">The 3Rs & Food Story</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Reduce food waste, save water, and cut energy use. Support Singapore's "30 by 30" goal by buying local produce and exploring alternative proteins like approved insect species.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl font-bold mb-4">🏷️</div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Eco-Labels</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Look out for NEA Energy Labels, PUB Water Efficiency Labels, and Singapore Green Labels to make smart, resource-efficient purchasing decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: GAMES -->
+        <div id="tab-2" class="tab-content space-y-12">
+            <div class="bg-white rounded-3xl p-8 border border-emerald-100 shadow-sm">
+                <span class="bg-teal-100 text-teal-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Interactive Zone</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-2 mb-2">Test Your Knowledge</h2>
+                <p class="text-slate-600 text-sm">Complete all three mini-games below to test your understanding of sustainable consumption!</p>
+            </div>
+
+            <!-- GAME 1: WASTE SORTER -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-emerald-100 shadow-sm space-y-6">
+                <div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Game 1 of 3</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Bin It Right: Waste Sorter</h3>
+                    <p class="text-sm text-slate-600">Click an item below, then choose the correct bin where it belongs!</p>
+                </div>
+                <div id="sorter-container" class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <div class="space-y-4">
+                        <p class="font-semibold text-sm text-slate-700">Select an item to sort:</p>
+                        <div id="waste-items" class="grid grid-cols-2 gap-3">
+                            <button onclick="selectWaste('Old Smartphone', 'E-Waste')" class="p-3 bg-white border border-slate-200 rounded-xl text-sm font-medium hover:border-emerald-500 hover:bg-emerald-50 transition shadow-sm text-left">📱 Old Smartphone</button>
+                            <button onclick="selectWaste('Clean Glass Bottle', 'Recycling Bin')" class="p-3 bg-white border border-slate-200 rounded-xl text-sm font-medium hover:border-emerald-500 hover:bg-emerald-50 transition shadow-sm text-left">🍾 Clean Glass Bottle</button>
+                            <button onclick="selectWaste('Food-Stained Pizza Box', 'General Waste')" class="p-3 bg-white border border-slate-200 rounded-xl text-sm font-medium hover:border-emerald-500 hover:bg-emerald-50 transition shadow-sm text-left">🍕 Pizza Box</button>
+                            <button onclick="selectWaste('Expired Fresh Milk', 'General Waste')" class="p-3 bg-white border border-slate-200 rounded-xl text-sm font-medium hover:border-emerald-500 hover:bg-emerald-50 transition shadow-sm text-left">🥛 Expired Milk</button>
+                        </div>
+                    </div>
+                    <div class="space-y-4 flex flex-col justify-center">
+                        <div id="selected-item-display" class="p-4 bg-white rounded-xl border border-dashed border-slate-300 text-center text-sm text-slate-500">
+                            No item selected yet. Click an item on the left!
+                        </div>
+                        <p class="font-semibold text-sm text-slate-700">Choose the correct disposal bin:</p>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="checkBin('Recycling Bin')" class="p-3 bg-blue-50 border border-blue-200 text-blue-800 rounded-xl text-xs font-bold hover:bg-blue-100 transition">🔵 Blue Recycling Bin</button>
+                            <button onclick="checkBin('E-Waste')" class="p-3 bg-amber-50 border border-amber-200 text-amber-800 rounded-xl text-xs font-bold hover:bg-amber-100 transition">📦 E-Waste Bin</button>
+                            <button onclick="checkBin('General Waste')" class="p-3 bg-slate-100 border border-slate-300 text-slate-800 rounded-xl text-xs font-bold hover:bg-slate-200 transition">🗑️ General Waste</button>
+                        </div>
+                        <div id="sorter-feedback" class="text-sm font-semibold text-center h-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GAME 2: ECO-LABEL MATCH -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-emerald-100 shadow-sm space-y-6">
+                <div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Game 2 of 3</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Eco-Label Matcher</h3>
+                    <p class="text-sm text-slate-600">Match the eco-label to its correct description!</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <div class="space-y-3">
+                        <p class="font-semibold text-sm text-slate-700">Select a Label:</p>
+                        <button onclick="selectLabel('Energy')" class="w-full p-4 bg-white border border-slate-200 rounded-xl text-sm font-semibold hover:border-emerald-500 hover:bg-emerald-50 transition text-left flex items-center justify-between">
+                            <span>⚡ Energy Label (NEA)</span>
+                            <span id="badge-Energy" class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-600">Unmatched</span>
+                        </button>
+                        <button onclick="selectLabel('Water')" class="w-full p-4 bg-white border border-slate-200 rounded-xl text-sm font-semibold hover:border-emerald-500 hover:bg-emerald-50 transition text-left flex items-center justify-between">
+                            <span>💧 Water Efficiency Label (PUB)</span>
+                            <span id="badge-Water" class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-600">Unmatched</span>
+                        </button>
+                        <button onclick="selectLabel('Green')" class="w-full p-4 bg-white border border-slate-200 rounded-xl text-sm font-semibold hover:border-emerald-500 hover:bg-emerald-50 transition text-left flex items-center justify-between">
+                            <span>🍃 Singapore Green Label (SEC)</span>
+                            <span id="badge-Green" class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-600">Unmatched</span>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="font-semibold text-sm text-slate-700">Select Matching Description:</p>
+                        <button onclick="matchDesc('Energy')" class="w-full p-4 bg-white border border-slate-200 rounded-xl text-sm text-slate-700 hover:bg-emerald-50 hover:border-emerald-500 transition text-left">Shows energy efficiency & annual cost for refrigerators & air-conditioners.</button>
+                        <button onclick="matchDesc('Water')" class="w-full p-4 bg-white border border-slate-200 rounded-xl text-sm text-slate-700 hover:bg-emerald-50 hover:border-emerald-500 transition text-left">Indicates water efficiency rating (1 to 4 ticks) for taps and flushing cisterns.</button>
+                        <button onclick="matchDesc('Green')" class="w-full p-4 bg-white border border-slate-200 rounded-xl text-sm text-slate-700 hover:bg-emerald-50 hover:border-emerald-500 transition text-left">Certifies environmentally friendly consumer products and services meeting high standards.</button>
+                    </div>
+                </div>
+                <div id="match-feedback" class="text-sm font-semibold text-center text-emerald-700"></div>
+            </div>
+
+            <!-- GAME 3: TRIVIA QUIZ -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-emerald-100 shadow-sm space-y-6">
+                <div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Game 3 of 3</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Sustainability Trivia Challenge</h3>
+                    <p class="text-sm text-slate-600">Test what you remember from the lesson slides!</p>
+                </div>
+                <div class="space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <!-- Q1 -->
+                    <div class="space-y-3 pb-4 border-b border-slate-200">
+                        <p class="font-bold text-slate-900 text-sm">1. What percentage of our food does Singapore import?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                            <button onclick="checkQuiz(1, 'A', false)" id="q1-a" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">A) Over 50%</button>
+                            <button onclick="checkQuiz(1, 'B', true)" id="q1-b" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">B) Over 90%</button>
+                            <button onclick="checkQuiz(1, 'C', false)" id="q1-c" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">C) Exactly 30%</button>
+                        </div>
+                        <div id="q1-feedback" class="text-xs font-semibold"></div>
+                    </div>
+                    <!-- Q2 -->
+                    <div class="space-y-3 pb-4 border-b border-slate-200">
+                        <p class="font-bold text-slate-900 text-sm">2. Which of the following is NOT a good way to reduce food waste at home?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                            <button onclick="checkQuiz(2, 'A', false)" id="q2-a" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">A) Write a shopping list</button>
+                            <button onclick="checkQuiz(2, 'B', true)" id="q2-b" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">B) Buy bulk promotional items even if unneeded</button>
+                            <button onclick="checkQuiz(2, 'C', false)" id="q2-c" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">C) Use leftovers to make a new dish</button>
+                        </div>
+                        <div id="q2-feedback" class="text-xs font-semibold"></div>
+                    </div>
+                    <!-- Q3 -->
+                    <div class="space-y-3">
+                        <p class="font-bold text-slate-900 text-sm">3. What is Singapore's local production target by 2030 under the "30 by 30" initiative?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                            <button onclick="checkQuiz(3, 'A', false)" id="q3-a" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">A) 10% of nutritional needs</button>
+                            <button onclick="checkQuiz(3, 'B', false)" id="q3-b" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">B) 50% of nutritional needs</button>
+                            <button onclick="checkQuiz(3, 'C', true)" id="q3-c" class="p-3 bg-white border border-slate-200 rounded-xl text-xs font-medium text-left hover:bg-emerald-50">C) 30% of nutritional needs</button>
+                        </div>
+                        <div id="q3-feedback" class="text-xs font-semibold"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: APPLE WAFFLES -->
+        <div id="tab-3" class="tab-content space-y-8">
+            <div class="bg-gradient-to-r from-amber-700 to-orange-800 rounded-3xl p-8 text-white shadow-xl">
+                <span class="bg-amber-500/30 text-amber-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Enrichment 1</span>
+                <h2 class="text-3xl font-extrabold mt-3 mb-2">Apple Waffles Pictorial Recipe</h2>
+                <p class="text-amber-100 text-sm sm:text-base">Learn how to make delicious apple waffles using whole or "ugly" fruits to reduce food waste!</p>
+            </div>
+
+            <!-- Video Section -->
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-emerald-100">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                    <span class="bg-amber-100 text-amber-800 p-2 rounded-lg mr-3 text-sm">🧇</span> Apple Waffles Animation
+                </h3>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Nobiith9v2U" title="Apple Waffles Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Ingredients -->
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center"><span class="mr-2">🛒</span> Ingredients</h3>
+                    <ul class="text-sm space-y-2 text-slate-600 divide-y divide-slate-100">
+                        <li class="pt-2 flex justify-between"><span>Plain flour</span><span class="font-semibold text-slate-900">100 g</span></li>
+                        <li class="pt-2 flex justify-between"><span>Egg</span><span class="font-semibold text-slate-900">1</span></li>
+                        <li class="pt-2 flex justify-between"><span>Milk</span><span class="font-semibold text-slate-900">100 ml</span></li>
+                        <li class="pt-2 flex justify-between"><span>Butter</span><span class="font-semibold text-slate-900">25 g</span></li>
+                        <li class="pt-2 flex justify-between"><span>Baking powder</span><span class="font-semibold text-slate-900">5 g</span></li>
+                        <li class="pt-2 flex justify-between"><span>Salt</span><span class="font-semibold text-slate-900">1/8 tsp</span></li>
+                        <li class="pt-2 flex justify-between"><span>Red apple</span><span class="font-semibold text-slate-900">1</span></li>
+                    </ul>
+                </div>
+                <!-- Method -->
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center"><span class="mr-2">👩‍🍳</span> Method Highlights</h3>
+                    <ol class="text-sm space-y-3 text-slate-600 list-decimal list-inside leading-relaxed">
+                        <li>Pre-heat the waffle maker and melt butter in a saucepan.</li>
+                        <li>Sift plain flour and baking powder in a bowl, mix with salt.</li>
+                        <li>Beat egg with milk, then stir in melted butter.</li>
+                        <li>Combine liquid mixture into the flour well and whisk till smooth (do not over-mix!).</li>
+                        <li>Grease waffle maker, place thin apple slices coated in batter, pour extra batter, and cook for 8 minutes. Drizzle maple syrup and serve!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: GARBAGE ENZYMES -->
+        <div id="tab-4" class="tab-content space-y-8">
+            <div class="bg-gradient-to-r from-teal-800 to-emerald-900 rounded-3xl p-8 text-white shadow-xl">
+                <span class="bg-teal-500/30 text-teal-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Enrichment 2</span>
+                <h2 class="text-3xl font-extrabold mt-3 mb-2">Garbage Enzymes Guide</h2>
+                <p class="text-teal-100 text-sm sm:text-base">Turn fruit peels into natural household detergents and eco-friendly cleaners!</p>
+            </div>
+
+            <!-- Video Section -->
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-emerald-100">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                    <span class="bg-teal-100 text-teal-800 p-2 rounded-lg mr-3 text-sm">🧪</span> Garbage Enzymes Animation
+                </h3>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Q9SeGfiqN8E" title="Garbage Enzymes Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Materials -->
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center"><span class="mr-2">🧪</span> Materials Needed</h3>
+                    <ul class="text-sm space-y-2 text-slate-600 divide-y divide-slate-100">
+                        <li class="pt-2 flex justify-between"><span>Brown sugar</span><span class="font-semibold text-slate-900">50 g</span></li>
+                        <li class="pt-2 flex justify-between"><span>Fruit peels</span><span class="font-semibold text-slate-900">150 g</span></li>
+                        <li class="pt-2 flex justify-between"><span>Water</span><span class="font-semibold text-slate-900">500 ml</span></li>
+                        <li class="pt-2 flex justify-between"><span>Container</span><span class="font-semibold text-slate-900">1 empty plastic bottle/jar</span></li>
+                    </ul>
+                </div>
+                <!-- Steps -->
+                <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center"><span class="mr-2">📝</span> Step-by-Step Instructions</h3>
+                    <ol class="text-sm space-y-3 text-slate-600 list-decimal list-inside leading-relaxed">
+                        <li>Add 50g of brown sugar and 500ml of water into the plastic container.</li>
+                        <li>Add 150g of fresh fruit peels into the container.</li>
+                        <li>Close tightly and shake well.</li>
+                        <li>Let it ferment for 3 months, opening once a week to release carbon dioxide gas.</li>
+                        <li>Filter out the residue to obtain your natural garbage enzyme detergent!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 5: SUBMIT POSTER -->
+        <div id="tab-5" class="tab-content space-y-8">
+            <div class="bg-gradient-to-r from-emerald-700 to-teal-800 rounded-3xl p-8 text-white shadow-xl">
+                <span class="bg-emerald-500/30 text-emerald-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">VIA Task</span>
+                <h2 class="text-3xl font-extrabold mt-3 mb-2">Poster Design Task</h2>
+                <p class="text-emerald-100 text-sm sm:text-base">Create an impactful poster on food sustainability to encourage reducing food waste and consuming responsibly with your table partner.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 border border-emerald-100 shadow-sm space-y-6 text-center">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mx-auto font-bold">📢</div>
+                <h3 class="text-2xl font-bold text-slate-900">Submit Your Class Poster</h3>
+                <p class="text-sm text-slate-600 max-w-xl mx-auto leading-relaxed">
+                    Once you and your partner have finished designing your poster using the template in your class folder, submit your completed work to your class folder via the official Padlet link below.
+                </p>
+                <div class="pt-2">
+                    <a href="https://padlet.com/compassvalesecondary1/2026_sec-2-via-green-compass-programme-b5fvpcpxiphjgyea" target="_blank" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-lg shadow-emerald-600/30 transition-all transform hover:-translate-y-0.5">
+                        🔗 Open Padlet Submission Board
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-white border-t border-emerald-100 py-6 text-center text-xs text-slate-500">
+        <p>Compassvale Secondary School • Green Compass Programme © 2026</p>
+    </footer>
+
+    <!-- Script Logic -->
+    <script>
+        function switchTab(tabNum) {
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById('tab-' + i).classList.remove('active');
+                let btn = document.getElementById('nav-' + i);
+                let mobBtn = document.getElementById('mob-nav-' + i);
+                if(btn) {
+                    btn.className = "px-4 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 hover:bg-emerald-50";
+                }
+                if(mobBtn) {
+                    mobBtn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 whitespace-nowrap";
+                }
+            }
+            document.getElementById('tab-' + tabNum).classList.add('active');
+            let activeBtn = document.getElementById('nav-' + tabNum);
+            let activeMobBtn = document.getElementById('mob-nav-' + tabNum);
+            if(activeBtn) {
+                activeBtn.className = "px-4 py-2 rounded-full text-sm font-semibold transition-all bg-emerald-600 text-white shadow-sm";
+            }
+            if(activeMobBtn) {
+                activeMobBtn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white whitespace-nowrap";
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Game 1 Logic
+        let activeWasteItem = null;
+        let activeWasteTarget = null;
+        function selectWaste(itemName, targetBin) {
+            activeWasteItem = itemName;
+            activeWasteTarget = targetBin;
+            document.getElementById('selected-item-display').innerHTML = `<span class="font-bold text-emerald-700">Selected:</span> ${itemName}`;
+            document.getElementById('sorter-feedback').innerText = "";
+        }
+        function checkBin(selectedBin) {
+            if(!activeWasteItem) {
+                document.getElementById('sorter-feedback').innerHTML = `<span class="text-amber-600">Please click an item on the left first!</span>`;
+                return;
+            }
+            if(selectedBin === activeWasteTarget) {
+                document.getElementById('sorter-feedback').innerHTML = `<span class="text-emerald-600">🎉 Correct! ${activeWasteItem} goes into the ${selectedBin}.</span>`;
+            } else {
+                document.getElementById('sorter-feedback').innerHTML = `<span class="text-rose-600">❌ Incorrect. Try another bin!</span>`;
+            }
+        }
+
+        // Game 2 Logic
+        let selectedLabelType = null;
+        function selectLabel(type) {
+            selectedLabelType = type;
+            document.getElementById('match-feedback').innerText = "Label selected! Now click the matching description on the right.";
+        }
+        function matchDesc(descType) {
+            if(!selectedLabelType) {
+                document.getElementById('match-feedback').innerText = "Please select an eco-label on the left first!";
+                return;
+            }
+            if(selectedLabelType === descType) {
+                document.getElementById('badge-' + descType).innerText = "Matched! ✅";
+                document.getElementById('badge-' + descType).className = "text-xs px-2 py-1 rounded bg-emerald-100 text-emerald-800 font-bold";
+                document.getElementById('match-feedback').innerText = "Correct match! Great job.";
+                selectedLabelType = null;
+            } else {
+                document.getElementById('match-feedback').innerText = "That's not a match for this label. Try again!";
+            }
+        }
+
+        // Game 3 Quiz Logic
+        function checkQuiz(qNum, option, isCorrect) {
+            let feedbackEl = document.getElementById('q' + qNum + '-feedback');
+            if(isCorrect) {
+                feedbackEl.innerHTML = `<span class="text-emerald-600 font-bold">✅ Correct! Excellent job.</span>`;
+            } else {
+                feedbackEl.innerHTML = `<span class="text-rose-600 font-bold">❌ Incorrect. Review the lesson slides and try again!</span>`;
+            }
+        }
+    </script>
+</body>
+</html>
